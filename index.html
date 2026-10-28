@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Judul dan Deskripsi dapat disesuaikan di bagian variabel bawah -->
+    <title id="page-title">Nama Usaha Anda - Solusi Terbaik Kebutuhan Anda</title>
+    <!-- Menggunakan Tailwind CSS dari CDN agar bersih, responsif, dan bebas error setup -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-emerald-500 selection:text-white">
+
+    <!-- HEADER / NAVBAR -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-100 shadow-sm">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-xl bg-emerald-600 text-white flex items-center justify-center font-bold text-xl shadow-md shadow-emerald-600/20" id="brand-logo-text">U</div>
+                <span class="font-bold text-xl tracking-tight text-slate-900" id="brand-name">Nama Usaha</span>
+            </div>
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-semibold text-slate-600">
+                <a href="#beranda" class="hover:text-emerald-600 transition">Beranda</a>
+                <a href="#tentang" class="hover:text-emerald-600 transition">Tentang Kami</a>
+                <a href="#produk" class="hover:text-emerald-600 transition">Produk / Layanan</a>
+                <a href="#testimoni" class="hover:text-emerald-600 transition">Testimoni</a>
+            </nav>
+            <div>
+                <a href="" id="nav-cta-btn" target="_blank" class="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold px-5 py-2.5 rounded-xl shadow-lg shadow-emerald-600/20 transition flex items-center space-x-2 text-sm">
+                    <i class="fab fa-whatsapp text-lg"></i>
+                    <span>Hubungi Kami</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="beranda" class="relative overflow-hidden pt-12 pb-20 lg:pt-20 lg:pb-28 bg-gradient-to-b from-emerald-50/50 to-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6 text-center lg:text-left">
+                    <span class="inline-flex items-center gap-1.5 py-1.5 px-3 rounded-full text-xs font-semibold bg-emerald-100 text-emerald-800" id="hero-badge">
+                        <i class="fas fa-sparkles"></i> Kualitas Terbaik & Terpercaya
+                    </span>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight leading-tight" id="hero-title">
+                        Solusi Terbaik Untuk Kebutuhan Anda
+                    </h1>
+                    <p class="text-lg text-slate-600 max-w-xl mx-auto lg:mx-0 leading-relaxed" id="hero-subtitle">
+                        Dapatkan produk dan layanan berkualitas tinggi langsung dari kami dengan penawaran harga terbaik serta pelayanan cepat.
+                    </p>
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+                        <a href="" id="hero-cta-main" target="_blank" class="w-full sm:w-auto bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-8 py-4 rounded-xl shadow-xl shadow-emerald-600/30 transition text-center flex items-center justify-center space-x-3">
+                            <i class="fab fa-whatsapp text-xl"></i>
+                            <span id="hero-cta-text">Pesan Sekarang</span>
+                        </a>
+                        <a href="#produk" class="w-full sm:w-auto bg-white hover:bg-slate-100 text-slate-700 font-bold px-8 py-4 rounded-xl border border-slate-200 transition text-center">
+                            Lihat Katalog
+                        </a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="absolute -inset-1.5 bg-gradient-to-r from-emerald-600 to-teal-400 rounded-3xl blur-xl opacity-20"></div>
+                    <img id="hero-image" src="https://images.unsplash.com/photo-1556742049-0a67d553c253?auto=format&fit=crop&w=800&q=80" alt="Hero Image" class="relative rounded-3xl shadow-2xl w-full object-cover h-[380px] lg:h-[450px]">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="tentang" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-4">
+                    <span class="text-emerald-600 font-bold text-sm tracking-wider uppercase">Tentang Usaha Kami</span>
+                    <h2 class="text-3xl font-extrabold text-slate-900 tracking-tight" id="about-title">Mengapa Memilih Produk Kami?</h2>
+                    <p class="text-slate-600 leading-relaxed" id="about-desc">
+                        Kami berkomitmen untuk selalu memberikan pengalaman berbelanja terbaik dengan mengutamakan kualitas, keaslian, dan kepuasan pelanggan di setiap transaksi.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4 pt-4">
+                        <div class="p-4 rounded-2xl bg-slate-50 border border-slate-100">
+                            <div class="text-emerald-600 font-bold text-2xl mb-1">100%</div>
+                            <div class="text-slate-600 text-sm font-medium">Bahan & Kualitas Pilihan</div>
+                        </div>
+                        <div class="p-4 rounded-2xl bg-slate-50 border border-slate-100">
+                            <div class="text-emerald-600 font-bold text-2xl mb-1">Fast Response</div>
+                            <div class="text-slate-600 text-sm font-medium">Pelayanan Ramah & Cepat</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=500&q=80" class="rounded-2xl shadow-md h-48 w-full object-cover" alt="About 1">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=500&q=80" class="rounded-2xl shadow-md h-48 w-full object-cover mt-8" alt="About 2">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUCT / CATALOG SECTION -->
+    <section id="produk" class="py-20 bg-slate-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-4">
+                <span class="text-emerald-600 font-bold text-sm tracking-wider uppercase">Katalog Pilihan</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">Produk & Layanan Unggulan</h2>
+                <p class="text-slate-600">Pilih produk terbaik yang sesuai dengan kebutuhan Anda hari ini.</p>
+            </div>
+            <!-- Container Daftar Produk (Diisi otomatis via Javascript) -->
+            <div id="product-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Data produk akan dirender di sini -->
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIAL SECTION -->
+    <section id="testimoni" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-4">
+                <span class="text-emerald-600 font-bold text-sm tracking-wider uppercase">Testimoni Pelanggan</span>
+                <h2 class="text-3xl font-extrabold text-slate-900 tracking-tight">Apa Kata Mereka?</h2>
+            </div>
+            <!-- Container Testimoni (Diisi otomatis via Javascript) -->
+            <div id="testimonial-container" class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Data testimoni akan dirender di sini -->
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER / CTA SECTION -->
+    <footer class="bg-slate-900 text-white py-16">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
+            <h2 class="text-3xl font-extrabold tracking-tight" id="footer-title">Siap Memesan Produk Kami?</h2>
+            <p class="text-slate-400 max-w-lg mx-auto" id="footer-subtitle">Hubungi kami sekarang melalui WhatsApp untuk konsultasi atau pemesanan cepat.</p>
+            <div>
+                <a href="" id="footer-cta-btn" target="_blank" class="inline-flex items-center space-x-3 bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-8 py-4 rounded-xl shadow-xl shadow-emerald-600/20 transition">
+                    <i class="fab fa-whatsapp text-xl"></i>
+                    <span id="footer-cta-text">Hubungi via WhatsApp</span>
+                </a>
+            </div>
+            <div class="pt-8 border-t border-slate-800 text-sm text-slate-500">
+                &copy; <span id="current-year"></span> <span id="footer-brand">Nama Usaha</span>. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- BAGIAN PENGATURAN / CONFIGURATION SCRIPT -->
+    <script>
+        // ==========================================
+        // PENGATURAN TOKO / USAHA (UBAH DI SINI)
+        // ==========================================
+        const CONFIG = {
+            whatsappNumber: "6281234567890", // Ganti dengan nomor WhatsApp Anda (awali dengan 62 tanpa +)
+            defaultMessage: "Halo, saya tertarik untuk memesan produk dari Anda.", // Pesan otomatis saat klik tombol WA
+            
+            // Informasi Utama Toko
+            brandName: "Kopi Kenangan Kita",
+            brandTagline: "Nikmati Kopi Asli Pilihan Setiap Hari",
+            heroBadgeText: "✨ Promo Spesial Minggu Ini",
+            heroImage: "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80",
+            
+            aboutTitle: "Kopi Segar Berkualitas Tinggi",
+            aboutDesc: "Kami menyajikan biji kopi pilihan berkualitas tinggi yang dipanggang secara sempurna untuk memberikan cita rasa terbaik bagi para pecinta kopi nusantara.",
+
+            // Daftar Produk / Layanan
+            products: [
+                {
+                    name: "Kopi Susu Signature",
+                    price: "Rp 18.000",
+                    desc: "Perpaduan kopi espresso pilihan dengan susu segar dan gula aren asli.",
+                    image: "https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=600&q=80",
+                    badge: "Terlaris"
+                },
+                {
+                    name: "Americano Ice",
+                    price: "Rp 15.000",
+                    desc: "Espresso murni dengan tambahan air dingin yang menyegarkan hari Anda.",
+                    image: "https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?auto=format&fit=crop&w=600&q=80",
+                    badge: "Favorit"
+                },
+                {
+                    name: "Croissant Butter",
+                    price: "Rp 20.000",
+                    desc: "Pastry renyah dengan aroma mentega premium yang gurih dan lembut di dalam.",
+                    image: "https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=600&q=80",
+                    badge: "Snack"
+                }
+            ],
+
+            // Daftar Testimoni Pelanggan
+            testimonials: [
+                {
+                    name: "Budi Santoso",
+                    comment: "Rasanya benar-benar nikmat dan kopinya sangat terasa kuat. Pengiriman juga cepat!",
+                    role: "Pelanggan Setia"
+                },
+                {
+                    name: "Siti Rahma",
+                    comment: "Kopi susu signature-nya juara banget! Harga terjangkau dan pelayanannya ramah.",
+                    role: "Pencinta Kopi"
+                },
+                {
+                    name: "Ahmad Fauzi",
+                    comment: "Croissant dan americano-nya pas banget buat nemenin kerja seharian.",
+                    role: "Pekerja Kantoran"
+                }
+            ]
+        };
+
+        // ==========================================
+        // SCRIPT RENDER OTOMATIS (JANGAN DIUBAH)
+        // ==========================================
+        document.addEventListener("DOMContentLoaded", () => {
+            // Set Text Konten
+            document.getElementById("page-title").innerText = `${CONFIG.brandName} - ${CONFIG.brandTagline}`;
+            document.getElementById("brand-name").innerText = CONFIG.brandName;
+            document.getElementById("footer-brand").innerText = CONFIG.brandName;
+            document.getElementById("brand-logo-text").innerText = CONFIG.brandName.charAt(0);
+            document.getElementById("hero-badge").innerHTML = `<i class="fas fa-sparkles"></i> ${CONFIG.heroBadgeText}`;
+            document.getElementById("hero-title").innerText = CONFIG.brandTagline;
+            document.getElementById("hero-subtitle").innerText = CONFIG.aboutDesc;
+            document.getElementById("hero-image").src = CONFIG.heroImage;
+            document.getElementById("about-title").innerText = CONFIG.aboutTitle;
+            document.getElementById("about-desc").innerText = CONFIG.aboutDesc;
+            document.getElementById("current-year").innerText = new Date().getFullYear();
+
+            // Setup WhatsApp Links
+            const waUrl = `https://wa.me/${CONFIG.whatsappNumber}?text=${encodeURIComponent(CONFIG.defaultMessage)}`;
+            document.getElementById("nav-cta-btn").href = waUrl;
+            document.getElementById("hero-cta-main").href = waUrl;
+            document.getElementById("footer-cta-btn").href = waUrl;
+
+            // Render Produk
+            const productContainer = document.getElementById("product-container");
+            CONFIG.products.forEach(p => {
+                const productWaUrl = `https://wa.me/${CONFIG.whatsappNumber}?text=${encodeURIComponent(`Halo, saya ingin memesan produk: ${p.name} (${p.price})`)}`;
+                const card = `
+                    <div class="bg-white rounded-2xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-xl transition flex flex-col justify-between">
+                        <div>
+                            <div class="relative h-56 overflow-hidden">
+                                <img src="${p.image}" alt="${p.name}" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                                <span class="absolute top-3 left-3 bg-emerald-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow">${p.badge}</span>
+                            </div>
+                            <div class="p-6 space-y-2">
+                                <div class="flex justify-between items-start">
+                                    <h3 class="font-bold text-xl text-slate-900">${p.name}</h3>
+                                    <span class="font-extrabold text-emerald-600 text-lg">${p.price}</span>
+                                </div>
+                                <p class="text-slate-600 text-sm leading-relaxed">${p.desc}</p>
+                            </div>
+                        </div>
+                        <div class="p-6 pt-0">
+                            <a href="${productWaUrl}" target="_blank" class="w-full bg-slate-100 hover:bg-emerald-600 hover:text-white text-slate-700 font-semibold py-3 rounded-xl transition flex items-center justify-center space-x-2 text-sm">
+                                <i class="fab fa-whatsapp text-lg"></i>
+                                <span>Pesan Produk Ini</span>
+                            </a>
+                        </div>
+                    </div>
+                `;
+                productContainer.innerHTML += card;
+            });
+
+            // Render Testimoni
+            const testimonialContainer = document.getElementById("testimonial-container");
+            CONFIG.testimonials.forEach(t => {
+                const testCard = `
+                    <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100 flex flex-col justify-between space-y-4">
+                        <div class="text-amber-400 text-sm">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-slate-700 text-sm leading-relaxed italic">"${t.comment}"</p>
+                        <div>
+                            <div class="font-bold text-slate-900 text-sm">${t.name}</div>
+                            <div class="text-slate-500 text-xs">${t.role}</div>
+                        </div>
+                    </div>
+                `;
+                testimonialContainer.innerHTML += testCard;
+            });
+        });
+    </script>
+</body>
+</html>
